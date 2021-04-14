@@ -1,0 +1,29 @@
+@import "../Settings/colours.scss";
+
+.Button {
+    align-items: center;
+    background: $button-grey-dark;
+    border-radius: 50%;
+    display: flex;
+    font-size: 45px;
+    height: 110px;
+    justify-content: center;
+    width: 110px;
+
+    &.function {
+        color: $true-black;
+        background: $button-grey-light;
+    }
+
+    &.operator {
+        background: $button-orange;
+    }
+
+    &.zero {
+        border-radius: 57.5px;
+        grid-column: 1 / span 2;
+        justify-content: flex-start;
+        padding-left: 43px;
+        width: 250px;
+    }
+}
